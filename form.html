@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html Form</title>
+</head>
+<body>
+	<form method="" action="">
+		<label for="input_name">Name :</label>
+		<input type="text" name="name" id="input_name" required><br><br>
+		<label for="input_email">Email :</label>
+		<input type="email" name="email" id="input_email"><br><br>
+		<label for="input_age">Age :</label>
+		<input type="number" name="age" id="input_age" step="5"><br><br>
+		<input type="hidden" name="oldvalue" value="mgmg"><br><br>
+		<label>Gender</label>
+		<input type="radio" name="gender" value="male" id="input_male" checked><label for="input_male">Male</label>
+		<input type="radio" name="gender" value="female" id="input_female"><label for="input_female">Female</label><br><br>
+		<label>Hobbies</label>
+		<input type="checkbox" name="hobbies[]" value="reading" id="input_read"><label for="input_read">Reading</label>
+		<input type="checkbox" name="hobbies[]" value="football" id="input_foot"><label for="input_foot">Football</label>
+		<input type="checkbox" name="hobbies[]" value="dancing" id="input_dance"><label for="input_dance">Dancing</label>
+		<label for="input_address">Address :</label>
+		<textarea id="input_address" name="address" rows="4"></textarea><br><br>
+		<label for="input_year">Acemedic Year :</label>
+		<select name="acemedic_year" id="input_year">
+			<optgroup label="Choose Acemedic Year">
+				<option value="1">First Year</option>
+				<option value="2">Second Year</option>
+				<option value="3">Third Year</option>
+			</optgroup>
+		</select><br><br>
+		<label for="input_profile">Profile :</label>
+		<input type="file" name="profile[]" multiple accept="image/*"><br><br>
+		<input type="submit" name="btnsubmit" value="Save">
+		<input type="reset" name="btnreset" value="Cancel">
+	</form>
+</body>
+</html>
